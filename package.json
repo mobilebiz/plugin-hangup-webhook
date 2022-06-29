@@ -1,0 +1,23 @@
+{
+  "name": "plugin-hangup-webhook",
+  "version": "0.0.14",
+  "private": true,
+  "scripts": {
+    "start": "twilio flex:plugins:start",
+    "test": "twilio flex:plugins:test",
+    "postinstall": "flex-plugin pre-script-check",
+    "build": "twilio flex:plugins:build",
+    "deploy": "twilio flex:plugins:deploy --changelog='Deploy at '+`date +%Y%m%d_%H%M%S`"
+  },
+  "dependencies": {
+    "@twilio/flex-plugin-scripts": "5.1.2",
+    "axios": "^0.27.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-emotion": "*"
+  },
+  "devDependencies": {
+    "@twilio/flex-ui": "2.0.0-beta.1",
+    "react-test-renderer": "17.0.2"
+  }
+}
