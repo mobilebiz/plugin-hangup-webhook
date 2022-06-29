@@ -37,9 +37,7 @@ export default class HangupWebhookPlugin extends FlexPlugin {
 
       flex.Actions.addListener('afterAcceptTask', async (payload) => {
         console.log(`🐞🐞🐞 accepted task.`);
-        if (payload.task.attributes.direction === 'outbound') {
-          taskSid = payload.task.taskSid || '';
-        }
+        taskSid = payload.task.taskSid || '';
       });
     }
   }
